@@ -3,43 +3,47 @@
 # Effects
 
 ## Blob
-Command: `Blob` <br />
+Command: `blob` <br />
 Dependency: None
 ![Blob demo](demo/Blob.png)
 
 ## Chromatic Abberation
-Command: `ChromaAb` <br />
+Command: `chromaa` <br />
 Dependency: None
 ![Chromatic Abberation demo](demo/ChromaticAbberation.png)
 
 ## Dispersion
-Command: `Dispersion` <br />
+Command: `disperse` <br />
 Dependency: None
 ![Dispersion demo](demo/Dispersion.png)
 
 ## Edge Glow
-Command: `EdgeGlow` <br />
+Command: `edgeg` <br />
 Dependency: None
 ![Edge Glow demo](demo/EdgeGlow.png)
 
 ## Mirror Wrapping
-Command: `MirrorWrapping` <br />
+Command: `wrap` <br />
 Dependency: None
 ![Mirror Wrapping demo](demo/MirrorWrapping.png)
 
 # Transitions
 
 ## Spin
-Command: `TransitionSpin` <br />
+Command: `tspin` <br />
 Dependency: None
 ![Spin demo](demo/Spin.gif)
 
 ## Shake
-Command: `TransitionShake` <br />
+Command: `tshake` <br />
 Dependency: None
 ![Shake demo](demo/Shake.gif)
 
 ## S-Zoom
-Command: `TransitionSzoom` <br />
+Command: `tszoom` <br />
 Dependency: Dispersion, Mirror Wrapping
 ![Szoom demo](demo/Szoom.gif)
+
+## General Transition Node
+Command: `gtn` <br />
+Dependency: Spin, Shake, S-Zoom

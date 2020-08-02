@@ -1,8 +1,10 @@
 # Nuke-Gizmos
+These gizmos only works with nuke non-commercial. They **cannot** be used in nuke commercial.
 ![Banner](banner.png)
 # Effects
 
 ## Blob
+*Fisheye lens effect.*<br />
 Command: `blob` <br />
 Dependency: None
 ![Blob demo](demo/Blob.png)
@@ -10,6 +12,7 @@ Dependency: None
 **BLOB**: The "blobness"
 
 ## Chromatic Aberration
+*Chromatic aberration using translation or scaling*<br />
 Command: `chromaa` <br />
 Dependency: None
 ![Chromatic Aberration demo](demo/ChromaticAbberation.png)
@@ -23,6 +26,7 @@ Dependency: None
 **blu**r: Blurness of the red and blue channels
 
 ## Dispersion
+*Chromatic dispersion.*<br />
 Command: `disperse` <br />
 Dependency: None
 ![Dispersion demo](demo/Dispersion.png)
@@ -42,6 +46,7 @@ chroma - Blend with the aberrated source<br />
 source - Blend with the original unaberrated source
 
 ## Edge Glow
+*Edge outline which glows and distort*<br />
 Command: `edgeg` <br />
 Dependency: None
 ![Edge Glow demo](demo/EdgeGlow.png)
@@ -56,6 +61,7 @@ Dependency: None
 **speed**: Speed of distortion
 
 ## Mirror Wrapping
+*Make the source seamless so black bars wouldn't appear during transformation*<br />
 Command: `wrap` <br />
 Dependency: None
 ![Mirror Wrapping demo](demo/MirrorWrapping.png)
@@ -70,6 +76,7 @@ Dependency: None
 # Transitions
 
 ## Spin
+*Blurred spinning transition*<br />
 Command: `tspin` <br />
 Dependency: None
 ![Spin demo](demo/Spin.gif)
@@ -81,6 +88,7 @@ Dependency: None
 **shutter**: Amount of frame being considered in motion blur
 
 ## Shake
+*Sudden Shake*<br />
 Command: `tshake` <br />
 Dependency: None
 ![Shake demo](demo/Shake.gif)
@@ -94,6 +102,7 @@ Dependency: None
 **shutter**: Amount of frame being considered in motion blur
 
 ## S-Zoom
+*Shake and Zoom in transition*<br />
 Command: `tszoom` <br />
 Dependency: Dispersion, Mirror Wrapping
 ![Szoom demo](demo/Szoom.gif)
@@ -113,6 +122,7 @@ Dependency: Dispersion, Mirror Wrapping
 **ray**: Maximum blurring between each aberrated channels
 
 ## General Transition Node
+*Can be used as any of the transitions from above. Also can be used to create custom transitions*<br />
 Command: `gtn` <br />
 Dependency: Spin, Shake, S-Zoom
 ### Parameters
@@ -123,4 +133,4 @@ Dependency: Spin, Shake, S-Zoom
 **slope**: Rate of change of the quantity. Affect the start and end parts of the transition more when compared with `curvature`<br />
 **transition**: The transition to be used<br />
 **symmetric**: Can be used to create custom transitions outside this node. Symmetric means it goes from 0 to 1 then back to 0<br />
-**asymmetric**: Can be used to create custom transitions outside this node. Asymmetric means it only goes from 0 to 1
+**asymmetric**: Can be used to create custom transitions outside this node. Asymmetric means it only goes from -1 to 1
